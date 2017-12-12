@@ -3,3 +3,10 @@ $anim: all 0.3s;
 $green: #13a200;
 $grey: #1f1f1f;
 $border-color: #ebebeb;
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 992px" !default;
+$bp-larger-than-desktophd : "min-width: 1368px" !default;

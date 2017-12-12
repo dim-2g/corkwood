@@ -5,6 +5,8 @@
     <title>Главная страница</title>
 
     <!-- @if NODE_ENV='development' -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/template/vendor/slick/slick.css">
     <link rel="stylesheet" href="/assets/template/vendor/selectric/selectric.css">
     <link rel="stylesheet" href="/assets/template/vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="/assets/template/css/main.css">
@@ -18,13 +20,24 @@
 </head>
 <body>
 
+<div class="fa fa-bars" data-mfp-src="#mobile-menu"></div>
+<div class="mfp-hide mobile_menu" id="mobile-menu">
+    <ul class="">
+        <li class="first"><a href="#" ><span>Каталог</span></a></li>
+        <li><a href="#" ><span>Где купить</span></a></li>
+        <li><a href="#" ><span>Покупателям</span></a></li>
+        <li><a href="#" ><span>Партнерам</span></a></li>
+        <li class="last"><a href="#" ><span>Контакты</span></a></li>
+    </ul>
+</div>
+
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4 header__logo">
                 <a href="/" class="logo"><img src="/assets/template/img/logo.jpg" alt="пробковые полы corkstyle" /></a>
             </div>
-            <div class="col-sm-8 col-xs-10 header__middle">
+            <div class="col-md-8 header__middle">
                 <div class="top-menu">
                     <ul class="">
                         <li class="first"><a href="#" ><span>Каталог</span></a></li>
