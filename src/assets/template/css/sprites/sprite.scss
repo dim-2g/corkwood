@@ -1,0 +1,266 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$advantages-1-name: 'advantages-1';
+$advantages-1-x: 84px;
+$advantages-1-y: 0px;
+$advantages-1-offset-x: -84px;
+$advantages-1-offset-y: 0px;
+$advantages-1-width: 102px;
+$advantages-1-height: 64px;
+$advantages-1-total-width: 232px;
+$advantages-1-total-height: 155px;
+$advantages-1-image: '/assets/template/css/sprites/sprite.png';
+$advantages-1: (84px, 0px, -84px, 0px, 102px, 64px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'advantages-1', );
+$advantages-2-name: 'advantages-2';
+$advantages-2-x: 0px;
+$advantages-2-y: 83px;
+$advantages-2-offset-x: 0px;
+$advantages-2-offset-y: -83px;
+$advantages-2-width: 70px;
+$advantages-2-height: 72px;
+$advantages-2-total-width: 232px;
+$advantages-2-total-height: 155px;
+$advantages-2-image: '/assets/template/css/sprites/sprite.png';
+$advantages-2: (0px, 83px, 0px, -83px, 70px, 72px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'advantages-2', );
+$advantages-3-name: 'advantages-3';
+$advantages-3-x: 70px;
+$advantages-3-y: 83px;
+$advantages-3-offset-x: -70px;
+$advantages-3-offset-y: -83px;
+$advantages-3-width: 73px;
+$advantages-3-height: 61px;
+$advantages-3-total-width: 232px;
+$advantages-3-total-height: 155px;
+$advantages-3-image: '/assets/template/css/sprites/sprite.png';
+$advantages-3: (70px, 83px, -70px, -83px, 73px, 61px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'advantages-3', );
+$advantages-4-name: 'advantages-4';
+$advantages-4-x: 0px;
+$advantages-4-y: 0px;
+$advantages-4-offset-x: 0px;
+$advantages-4-offset-y: 0px;
+$advantages-4-width: 84px;
+$advantages-4-height: 83px;
+$advantages-4-total-width: 232px;
+$advantages-4-total-height: 155px;
+$advantages-4-image: '/assets/template/css/sprites/sprite.png';
+$advantages-4: (0px, 0px, 0px, 0px, 84px, 83px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'advantages-4', );
+$angle-bottom-left-name: 'angle-bottom-left';
+$angle-bottom-left-x: 196px;
+$angle-bottom-left-y: 81px;
+$angle-bottom-left-offset-x: -196px;
+$angle-bottom-left-offset-y: -81px;
+$angle-bottom-left-width: 10px;
+$angle-bottom-left-height: 10px;
+$angle-bottom-left-total-width: 232px;
+$angle-bottom-left-total-height: 155px;
+$angle-bottom-left-image: '/assets/template/css/sprites/sprite.png';
+$angle-bottom-left: (196px, 81px, -196px, -81px, 10px, 10px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'angle-bottom-left', );
+$angle-bottom-right-name: 'angle-bottom-right';
+$angle-bottom-right-x: 216px;
+$angle-bottom-right-y: 81px;
+$angle-bottom-right-offset-x: -216px;
+$angle-bottom-right-offset-y: -81px;
+$angle-bottom-right-width: 10px;
+$angle-bottom-right-height: 10px;
+$angle-bottom-right-total-width: 232px;
+$angle-bottom-right-total-height: 155px;
+$angle-bottom-right-image: '/assets/template/css/sprites/sprite.png';
+$angle-bottom-right: (216px, 81px, -216px, -81px, 10px, 10px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'angle-bottom-right', );
+$angle-top-left-name: 'angle-top-left';
+$angle-top-left-x: 221px;
+$angle-top-left-y: 68px;
+$angle-top-left-offset-x: -221px;
+$angle-top-left-offset-y: -68px;
+$angle-top-left-width: 10px;
+$angle-top-left-height: 10px;
+$angle-top-left-total-width: 232px;
+$angle-top-left-total-height: 155px;
+$angle-top-left-image: '/assets/template/css/sprites/sprite.png';
+$angle-top-left: (221px, 68px, -221px, -68px, 10px, 10px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'angle-top-left', );
+$angle-top-right-name: 'angle-top-right';
+$angle-top-right-x: 206px;
+$angle-top-right-y: 81px;
+$angle-top-right-offset-x: -206px;
+$angle-top-right-offset-y: -81px;
+$angle-top-right-width: 10px;
+$angle-top-right-height: 10px;
+$angle-top-right-total-width: 232px;
+$angle-top-right-total-height: 155px;
+$angle-top-right-image: '/assets/template/css/sprites/sprite.png';
+$angle-top-right: (206px, 81px, -206px, -81px, 10px, 10px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'angle-top-right', );
+$clock-name: 'clock';
+$clock-x: 186px;
+$clock-y: 32px;
+$clock-offset-x: -186px;
+$clock-offset-y: -32px;
+$clock-width: 20px;
+$clock-height: 20px;
+$clock-total-width: 232px;
+$clock-total-height: 155px;
+$clock-image: '/assets/template/css/sprites/sprite.png';
+$clock: (186px, 32px, -186px, -32px, 20px, 20px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'clock', );
+$email-name: 'email';
+$email-x: 186px;
+$email-y: 68px;
+$email-offset-x: -186px;
+$email-offset-y: -68px;
+$email-width: 19px;
+$email-height: 13px;
+$email-total-width: 232px;
+$email-total-height: 155px;
+$email-image: '/assets/template/css/sprites/sprite.png';
+$email: (186px, 68px, -186px, -68px, 19px, 13px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'email', );
+$forma-mail-name: 'forma-mail';
+$forma-mail-x: 205px;
+$forma-mail-y: 68px;
+$forma-mail-offset-x: -205px;
+$forma-mail-offset-y: -68px;
+$forma-mail-width: 16px;
+$forma-mail-height: 12px;
+$forma-mail-total-width: 232px;
+$forma-mail-total-height: 155px;
+$forma-mail-image: '/assets/template/css/sprites/sprite.png';
+$forma-mail: (205px, 68px, -205px, -68px, 16px, 12px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'forma-mail', );
+$forma-message-name: 'forma-message';
+$forma-message-x: 186px;
+$forma-message-y: 52px;
+$forma-message-offset-x: -186px;
+$forma-message-offset-y: -52px;
+$forma-message-width: 16px;
+$forma-message-height: 16px;
+$forma-message-total-width: 232px;
+$forma-message-total-height: 155px;
+$forma-message-image: '/assets/template/css/sprites/sprite.png';
+$forma-message: (186px, 52px, -186px, -52px, 16px, 16px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'forma-message', );
+$forma-name-name: 'forma-name';
+$forma-name-x: 186px;
+$forma-name-y: 81px;
+$forma-name-offset-x: -186px;
+$forma-name-offset-y: -81px;
+$forma-name-width: 10px;
+$forma-name-height: 15px;
+$forma-name-total-width: 232px;
+$forma-name-total-height: 155px;
+$forma-name-image: '/assets/template/css/sprites/sprite.png';
+$forma-name: (186px, 81px, -186px, -81px, 10px, 15px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'forma-name', );
+$forma-phone-name: 'forma-phone';
+$forma-phone-x: 202px;
+$forma-phone-y: 52px;
+$forma-phone-offset-x: -202px;
+$forma-phone-offset-y: -52px;
+$forma-phone-width: 16px;
+$forma-phone-height: 16px;
+$forma-phone-total-width: 232px;
+$forma-phone-total-height: 155px;
+$forma-phone-image: '/assets/template/css/sprites/sprite.png';
+$forma-phone: (202px, 52px, -202px, -52px, 16px, 16px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'forma-phone', );
+$phone-name: 'phone';
+$phone-x: 206px;
+$phone-y: 32px;
+$phone-offset-x: -206px;
+$phone-offset-y: -32px;
+$phone-width: 18px;
+$phone-height: 19px;
+$phone-total-width: 232px;
+$phone-total-height: 155px;
+$phone-image: '/assets/template/css/sprites/sprite.png';
+$phone: (206px, 32px, -206px, -32px, 18px, 19px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'phone', );
+$placemark-name: 'placemark';
+$placemark-x: 218px;
+$placemark-y: 52px;
+$placemark-offset-x: -218px;
+$placemark-offset-y: -52px;
+$placemark-width: 13px;
+$placemark-height: 16px;
+$placemark-total-width: 232px;
+$placemark-total-height: 155px;
+$placemark-image: '/assets/template/css/sprites/sprite.png';
+$placemark: (218px, 52px, -218px, -52px, 13px, 16px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'placemark', );
+$quot-name: 'quot';
+$quot-x: 186px;
+$quot-y: 0px;
+$quot-offset-x: -186px;
+$quot-offset-y: 0px;
+$quot-width: 46px;
+$quot-height: 32px;
+$quot-total-width: 232px;
+$quot-total-height: 155px;
+$quot-image: '/assets/template/css/sprites/sprite.png';
+$quot: (186px, 0px, -186px, 0px, 46px, 32px, 232px, 155px, '/assets/template/css/sprites/sprite.png', 'quot', );
+$spritesheet-width: 232px;
+$spritesheet-height: 155px;
+$spritesheet-image: '/assets/template/css/sprites/sprite.png';
+$spritesheet-sprites: ($advantages-1, $advantages-2, $advantages-3, $advantages-4, $angle-bottom-left, $angle-bottom-right, $angle-top-left, $angle-top-right, $clock, $email, $forma-mail, $forma-message, $forma-name, $forma-phone, $phone, $placemark, $quot, );
+$spritesheet: (232px, 155px, '/assets/template/css/sprites/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
