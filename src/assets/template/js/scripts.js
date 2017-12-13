@@ -40,7 +40,7 @@ $(function() {
         adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 1050,
+                breakpoint: 1200,
                 settings: {
                     arrows: true,
                     slidesToShow: 3

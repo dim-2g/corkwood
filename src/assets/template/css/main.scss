@@ -83,6 +83,12 @@ header{
 .header{
     &__logo{
         text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        @media($bp-larger-than-tablet){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         @media($bp-larger-than-desktop){
             text-align: left;
         }
@@ -889,7 +895,80 @@ header{
     }
 }
 .b-collection{
-    background: transparent url('/assets/template/img/collection__bg.jpg') right 40px no-repeat;
+    @media($bp-larger-than-tablet){
+        background: transparent url('/assets/template/img/collection__bg.jpg') right 40px no-repeat;
+    }
+    &__item{
+        margin-bottom: 30px;
+    }
+    &__caption{
+        font-size: 22px;
+        font-weight: 700;
+        color:$green;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-top: 26px;
+        position: relative;
+        padding-left: 88px;
+        &:before{
+            content: " ";
+            display: inline-block;
+            width: 60px;
+            background: $green;
+            height: 1px;
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+        a{
+            color: inherit;
+            transition: $anim;
+            &:hover{
+                color: #1f1f1f;
+            }
+        }
+    }
+    &__image{
+        padding-left: 6px;
+    }
+    &__info{
+        font-size: 14px;
+        font-weight: 500;
+        color: $grey;
+        line-height: 170%;
+        padding-top: 26px;
+        padding-bottom: 20px;
+        padding-left: 6px;
+    }
+    &__pdf{
+        font-size: 12px;
+        margin-top: 22px;
+    }
+    &__readmore{
+        a{
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #13a200;
+            position: relative;
+            letter-spacing: 1.5px;
+            transition: $anim;
+            &:hover{
+                color: #1f1f1f;
+                &:before{
+                    color: #1f1f1f;
+                }
+            }
+            &:before {
+                position: absolute;
+                content: "\f178";
+                color: #13a200;
+                font-family: FontAwesome;
+                right: -28px;
+                top: -1px;
+            }
+        }
+    }
 }
 .catalog{
     &__header{
@@ -922,6 +1001,10 @@ header{
     }
     &__image{
         padding-left: 6px;
+        img{
+            width: 100%;
+            max-width: 360px;
+        }
     }
     &__info{
         font-size: 14px;
@@ -970,6 +1053,17 @@ header{
             &:before{
                 color: $grey;
             }
+        }
+    }
+}
+.b-catalog{
+    margin-bottom: 30px;
+    .header1{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        @media($bp-larger-than-tablet){
+            padding-top: 38px;
+            padding-bottom: 50px;
         }
     }
 }
@@ -1030,7 +1124,13 @@ header{
         }
     }
     &__item{
-        margin-bottom: 62px;
+        margin-bottom: 30px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        @media($bp-larger-than-tablet){
+            margin-bottom: 62px;
+        }
         a{
             &:hover{
                 .collectionlist__label{
@@ -1089,7 +1189,83 @@ header{
         text-align: left;
         line-height: 200%;
         color: $grey;
-        
+        margin-bottom: 20px;
+    }
+}
+div.selectric{
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 40px;
+    border-radius: 0;
+    &.selectricWrapper{
+        border: 0 none;
+    }
+    &.selectricOpen{
+        background-color: #fff;
+        border-color: #000;
+        .selectric{
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+    }
+    .label{
+        color: #000;
+        margin: 0 0 0 40px;
+        line-height: 36px;
+        padding: 0 24px;
+        font-size: 14px;
+
+    }
+    .button{
+        right: auto;
+        left: 0;
+        width: 40px;
+        height: 38px;
+        border-right: 1px solid #000;
+        &:before{
+            content: "\f0ab";
+            font-family: FontAwesome;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            color: #000;
+            font-size: 14px;
+            z-index: 20;
+            line-height: 38px;
+        }
+        &:after{
+            display: none;
+        }
+    }
+    .selectricItems{
+        background-color: #fff;
+        color: #fff;
+        width: 100% !important;
+
+        li{
+            border-top: 0 none;
+            border-bottom: 1px solid #464646;
+            &:hover{
+                background-color: $green;
+                a{
+                    color: #fff;
+                }
+            }
+            a{
+                color: #000;
+                text-decoration: none;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+.select__city{
+    div.selectric{
+        width: 262px;
+        @media($bp-larger-than-tablet){
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 }
 .arrow-green{
@@ -1186,12 +1362,16 @@ header{
         color: #b3b3b3;
         font-size: 12px;
         letter-spacing: 1.5px;
+
+    }
+    &__value{
+        position: relative;
         &.contacts__placemark {
             position: relative;
             &:before {
                 position: absolute;
                 content: "";
-                top: 26px;
+                top: 6px;
                 left: 10px;
                 @include sprite($placemark);
             }
@@ -1201,7 +1381,7 @@ header{
             &:before {
                 position: absolute;
                 content: "";
-                top: 22px;
+                top: 6px;
                 left: 10px;
                 @include sprite($phone);
             }
@@ -1211,7 +1391,7 @@ header{
             &:before {
                 position: absolute;
                 content: "";
-                top: 24px;
+                top: 6px;
                 left: 6px;
                 @include sprite($clock);
             }
@@ -1221,28 +1401,34 @@ header{
             &:before {
                 position: absolute;
                 content: "";
-                top: 28px;
+                top: 6px;
                 left: 8px;
                 @include sprite($email);
             }
         }
-    }
-    &__value p{
-        margin: 0;
-        padding-top: 6px;
-        padding-left: 34px;
-        font-size: 16px;
-        font-weight: 500;
-        color: $grey;
-        padding-bottom: 3px;
-        padding-right: 98px;
-        &.contacts__hint{
-            font-size: 12px;
+        p{
+            margin: 0;
+            padding-top: 6px;
+            padding-left: 34px;
+            font-size: 16px;
             font-weight: 500;
             color: $grey;
+            padding-bottom: 3px;
+            padding-right: 4px;
+            &.contacts__hint{
+                font-size: 12px;
+                font-weight: 500;
+                color: $grey;
+            }
         }
     }
 
+
+}
+.contacts{
+    &__col{
+        margin-bottom: 40px;
+    }
 }
 
 .b-content{
@@ -1286,11 +1472,12 @@ header{
         .xbtn{
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 82px;
+            margin-bottom: 40px;
             letter-spacing: 0.8px;
             @media($bp-larger-than-phablet){
                 margin-left: 0;
                 margin-right: 0;
+                margin-bottom: 82px;
             }
         }
     }
@@ -1313,15 +1500,26 @@ header{
 
 .header1{
     padding-top: 38px;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 500;
     color: $grey;
     letter-spacing: 3px;
     padding-bottom: 50px;
+    line-height: 30px;
+    @media($bp-larger-than-tablet){
+        font-size: 36px;
+        line-height: 36px;
+    }
 }
 .certificate{
     &__image{
         margin-bottom: 60px;
+        max-width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            width: 100%;
+        }
     }
 }
 .aside{
@@ -1330,6 +1528,9 @@ header{
         padding-top: 40px;
         position: relative;
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 360px;
         &:before {
             content: " ";
             display: inline-block;
@@ -1393,13 +1594,18 @@ header{
         color: #13a200;
         text-transform: uppercase;
         letter-spacing: 1.5px;
-        padding-top: 10px;
         line-height: 176%;
         padding-bottom: 24px;
+        @media($bp-larger-than-desktophd){
+            padding-top: 10px;
+        }
     }
     &__info {
-        margin-left: 6px;
-        margin-bottom: 85px;
+        margin-bottom: 40px;
+        @media($bp-larger-than-tablet){
+            margin-left: 6px;
+            margin-bottom: 85px;
+        }
     }
     &__text {
         font-weight: 500;
@@ -1408,11 +1614,20 @@ header{
         line-height: 184%;
         padding-bottom: 12px;
     }
-    &__image img{
-        width: 100%;
+    &__image{
+        max-width: 360px;
+        margin-bottom: 30px;
+        @media($bp-larger-than-tablet){
+
+        }
+        img{
+            width: 100%;
+        }
     }
     &__item {
-        margin-left: 25px;
+        @media($bp-larger-than-desktophd){
+            margin-left: 25px;
+        }
         a.save{
             text-transform: uppercase;
             font-weight: 700;
@@ -1441,7 +1656,9 @@ header{
 }
 .faq{
     &__list{
-        margin-left: 98px;
+        @media($bp-larger-than-desktophd){
+            margin-left: 98px;
+        }
     }
     &__item{
         cursor: pointer;
@@ -1456,10 +1673,13 @@ header{
 
         font-weight: 500;
         position: relative;
-        font-size: 18px;
+        font-size: 14px;
         transition: $anim;
         display: table;
         width: 100%;
+        @media($bp-larger-than-mobile){
+            font-size: 18px;
+        }
     }
     &__btn{
         display: table-cell;

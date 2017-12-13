@@ -1,4 +1,52 @@
-//= include/header.html
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/template/vendor/slick/slick.css">
+    <link rel="stylesheet" href="/assets/template/vendor/selectric/selectric.css">
+    <link rel="stylesheet" href="/assets/template/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/template/css/main.css">
+
+</head>
+<body>
+
+<div class="fa fa-bars" data-mfp-src="#mobile-menu"></div>
+<div class="mfp-hide mobile_menu" id="mobile-menu">
+    <ul class="">
+        <li class="first"><a href="#" ><span>Каталог</span></a></li>
+        <li><a href="#" ><span>Где купить</span></a></li>
+        <li><a href="#" ><span>Покупателям</span></a></li>
+        <li><a href="#" ><span>Партнерам</span></a></li>
+        <li class="last"><a href="#" ><span>Контакты</span></a></li>
+    </ul>
+</div>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 header__logo">
+                <a href="/" class="logo"><img src="/assets/template/img/logo.jpg" alt="пробковые полы corkstyle" /></a>
+            </div>
+            <div class="col-md-8 header__middle">
+                <div class="top-menu">
+                    <ul class="">
+                        <li class="first"><a href="#" ><span>Каталог</span></a></li>
+                        <li><a href="#" ><span>Где купить</span></a></li>
+                        <li><a href="#" ><span>Покупателям</span></a></li>
+                        <li><a href="#" ><span>Партнерам</span></a></li>
+                        <li class="last"><a href="#" ><span>Контакты</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<script>document.title="Где купить";</script>
 
 <div class="b-breadcrumbs">
     <div class="container">
@@ -9,9 +57,17 @@
 <div class="b-wherebuy">
     <div class="container">
         <div class="header1">Где купить</div>
-        <div class="wherebuy__location">
-            <div class="wherebuy__city">Москва</div>
+
+        <div class="select__city" data-geo="Тамбов">
+            <div class="selectricWrapper selectric select-styled">
+                <div class="selectric">
+                    <p class="label">Москва</p><b class="button">▾</b>
+                </div>
+                <div class="selectricItems" tabindex="-1" style="width: 316px;">
+                    <ul class=""><li class="first active"><a href="gde-kupit/moskva" >Москва</a></li><li class="last"><a href="gde-kupit/kazan" >Казань</a></li></ul>                </div>
+            </div>
         </div>
+
 
         <div class="row">
             <div class="col-xs-12 stext">
@@ -33,20 +89,20 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-3" title="контакты">
-                        <div class="contacts__title contacts__placemark">Адрес магазина:</div>
+                    <div class="col-sm-6 col-lg-3" title="контакты">
+                        <div class="contacts__title">Адрес магазина:</div>
 
-                        <div class="contacts__value">
+                        <div class="contacts__value contacts__placemark">
                             <p>123308, г. Москва,<br />
                                 ул. Мневники, дом 10, кор. 1</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-3" title="">
+                    <div class="col-sm-6 col-lg-3" title="">
                         <div class="contacts__item">
-                            <div class="contacts__title contacts__phone">Многоканальные телефоны:</div>
+                            <div class="contacts__title">Многоканальные телефоны:</div>
 
-                            <div class="contacts__value">
+                            <div class="contacts__value contacts__phone">
                                 <p>8 (800) 333-23-66</p>
 
                                 <p>8 (495) 648-60-66</p>
@@ -54,19 +110,19 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
-                        <div class="contacts__title contacts__clock">Время работы:</div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="contacts__title">Время работы:</div>
 
-                        <div class="contacts__value">
+                        <div class="contacts__value contacts__clock">
                             <p>Пн-Пт: с 10-00 до 19-00<br />
                             Сб-Вс: с 11-00 до 18-00</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
-                        <div class="contacts__title contacts__email">Электронная почта:</div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="contacts__title">Электронная почта:</div>
 
-                        <div class="contacts__value">
+                        <div class="contacts__value contacts__email">
                             <p><a href="mailto:info@corkstyle.ru">info@corkstyle.ru</a></p>
                         </div>
                     </div>
@@ -78,42 +134,42 @@
 
 
         <div class="address__list row">
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4">
             <div class="address__item">
                 <div class="address__title">Студия " ARTCORKDESIGN "</div>
                 <div class="address__phone">8 (495) 104-91-01</div>
                 <div class="address__place">Москва, ул. Нижняя Сыромятническая, дом 10, Центр дизайна ART PLAY, строение 2 , 2 этаж.</div>
             </div>
         </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4">
             <div class="address__item">
                 <div class="address__title">Магазин "Пальмира"</div>
                 <div class="address__phone">8 (499) 550-02-77</div>
                 <div class="address__place">41км МКАД Строительная Ярмарка Мельница 1-й магазин: НБ 41 </div>
             </div>
         </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4">
             <div class="address__item">
                 <div class="address__title">Магазин "Винтаж"</div>
                 <div class="address__phone">8 (903) 218-71-77</div>
                 <div class="address__place">Московская область, Киевское шоссе, дом 1, БП "Румянцево", кор. "Г", пав. 272 </div>
             </div>
         </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4">
             <div class="address__item">
                 <div class="address__title">Салон напольных покрытий "ПОЛОВЪ"</div>
                 <div class="address__phone">8 (800) 775-46-21</div>
                 <div class="address__place"> Московская обл., Одинцово, ул. Маковского, 20,  </div>
             </div>
         </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4">
             <div class="address__item">
                 <div class="address__title">Магазин "Паркетный двор"</div>
                 <div class="address__phone">8 (495) 999-22-96</div>
                 <div class="address__place">Москва, Каширское шоссе, 19 кор.1,  пав. 2 - С84</div>
             </div>
         </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4">
             <div class="address__item">
                 <div class="address__title">Магазин "ПРОБКОВЫЕ ПОКРЫТИЯ"</div>
                 <div class="address__phone">8 (985) 840-00-30</div>
@@ -123,7 +179,7 @@
         </div>
     </div>
 </div>
-    <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AWOoUC4xOzR3ClA6cV1UfIR4GOG3yHFJ4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+    <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AWOoUC4xOzR3ClA6cV1UfIR4GOG3yHFJ4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
 
 
 
@@ -162,4 +218,50 @@
 </div>
 
 
-//= include/footer.html
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="copyright">©  2017 Corkstyle</div>
+            </div>
+            <div class="col-md-5">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/Corkstyle/" target="_blank" title="Перейти на страницу CORKSTYLE в сети FACEBOOK"><i class="fa fa-facebook"></i></a>
+                    <a href="https://plus.google.com/111606876241928689768" target="_blank" title="Перейти на страницу CORKSTYLE в GOOGLE +"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://www.youtube.com/channel/UC3e8aSSmJUFfCb0ibm9VYcQ" target="_blank" title="Перейти на страницу CORKSTYLE в YOUTUBE"><i class="fa fa-youtube-play"></i></a>
+                    <a href="https://twitter.com/corkstyle_ru" target="_blank" title="Перейти на страницу CORKSTYLE в TWITTER"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/corkstyle/" target="_blank" title="Перейти на страницу CORKSTYLE в INSTAGRAM"><i class="fa fa-instagram"></i></a>
+                    <a href="https://vk.com/corkstyle_ru" target="_blank" title="Перейти на страницу CORKSTYLE в КОНТАКТЕ"><i class="fa fa-vk" ></i></a>
+                    <a href="https://ru.pinterest.com/corkstyle/" target="_blank" title="Перейти на страницу CORKSTYLE в Pinterest"><i class="fa fa-pinterest" ></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer__phones">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <li>8 (800) 333-23-66</li>
+                    <li>8 (495) 648-64-66</li>
+                </ul>
+
+            </div>
+            <div class="col-md-2">
+                <div class="footer__mail"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto: info@corkstyle.ru">info@corkstyle.ru</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="footer__dev">
+                    <a href="https://group-s.ru" rel="nofollow">Создание сайта - Group-S</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="assets/template/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/template/vendor/slick/slick.js"></script>
+    <script src="assets/template/vendor/selectric/jquery.selectric.min.js"></script>
+    <script src="assets/template/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="assets/template/js/scripts.js"></script>
+
+</body>
+</html>
