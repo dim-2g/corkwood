@@ -74,4 +74,23 @@ $(function() {
         mainClass: 'mobile_menu_bg'
     });
 
+    var slider__main = $(".slider__main");
+    slider__main.slick({
+        dots: false,
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        speed: '1000',
+        autoplay: true
+    });
+   
+    $('.slider__next').on('click', function(){
+        slider__main.slick('slickNext');
+    });
+    $('.slider__prev').on('click', function(){
+        slider__main.slick('slickPrev');
+    });
+
 });
