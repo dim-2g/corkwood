@@ -114,7 +114,10 @@ header{
     position: relative;
 }
 .collection{
-    padding-bottom: 94px;
+    padding-bottom: 20px;
+    @media($bp-larger-than-tablet){
+        padding-bottom: 94px;
+    }
     &__image{
         height: 388px;
         position: relative;
@@ -144,16 +147,21 @@ header{
         font-weight: 600;
         letter-spacing: 2px;
         position: relative;
-        padding-left: 96px;
+        @media($bp-larger-than-tablet){
+            padding-left: 96px;
+        }
         &:before{
             content: " ";
-            display: inline-block;
+            display: none;
             width: 60px;
             background: #000;
             height: 1px;
             position: absolute;
-            top: 38%;
-            right: 93%;
+            top: 45%;
+            left: 0;
+            @media($bp-larger-than-tablet){
+                display: inline-block;
+            }
         }
 
     }
@@ -168,21 +176,36 @@ header{
     }
 }
 .advantage{
-    background: transparent url("/assets/template/img/advantage-bg.jpg") no-repeat;
-    height: 402px;
+    //background: transparent url("/assets/template/img/advantage-bg.jpg") no-repeat;
+    background: #f7f7f7;
+    min-height: 402px;
     padding-bottom: 50px;
     padding-top: 40px;
     &__caption{
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
         color: #1f1f1f;
-        letter-spacing: 3.3px;
         margin-bottom: 44px;
+        @media($bp-larger-than-tablet){
+            font-size: 36px;
+            letter-spacing: 3.3px;
+        }
+    }
+    &__card{
+        max-width: 292px;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__item {
         float: left;
         padding-right: 1px;
-        width: 25%;
+        width: 100%;
+        @media($bp-larger-than-phablet){
+            width: 50%;
+        }
+        @media($bp-larger-than-desktop){
+            width: 25%;
+        }
         &:nth-child(odd) {
             .advantage__card{
                 height: 178px;
@@ -198,39 +221,44 @@ header{
         }
         &:nth-child(even) {
             .advantage__card {
-                height: 200px;
+                height: 178px;
                 background-color: #fff;
-                padding-top: 52px;
+                margin-top: 12px;
+                padding-top: 38px;
                 padding-left: 22px;
-                box-shadow: 0 0 28px 0 rgba(21,21,21,0.13);
                 z-index: 2;
                 position: relative;
                 font-style: 18px;
                 font-weight: 500;
+                @media($bp-larger-than-desktop){
+                    margin-top: 0;
+                    height: 200px;
+                    background-color: #fff;
+                    padding-top: 52px;
+                    padding-left: 22px;
+                    box-shadow: 0 0 28px 0 rgba(21,21,21,0.13);
+                    z-index: 2;
+                    position: relative;
+                    font-style: 18px;
+                    font-weight: 500;
+                }
             }
         }
-        &:nth-child(1) {
-            position: relative;
-            &:before {
-                position: absolute;
-                right: 32px;
-                bottom: 10px;
-                content: "";
-                z-index: 3;
-                @include sprite($advantages-1);
-            }
+        &:nth-child(1){
+            .advantage__card{
+                position: relative;
+                &:before {
+                    position: absolute;
+                    right: 32px;
+                    bottom: 10px;
+                    content: "";
+                    z-index: 3;
+                    @include sprite($advantages-1);
+                }
+            }    
         }
-        &:nth-child(2) {
+        &:nth-child(2){
             position: relative;
-
-            &:before {
-                position: absolute;
-                right: 46px;
-                bottom: 22px;
-                content: "";
-                z-index: 3;
-                @include sprite($advantages-2);
-            }
             &:after{
                 content: "";
                 position: absolute;
@@ -240,17 +268,21 @@ header{
                 left: 50%;
                 border-right: 1px dashed $border-color;
             }
-        }
-        &:nth-child(3) {
-            position: relative;
-            &:before {
-                position: absolute;
-                right: 40px;
-                bottom: 14px;
-                content: "";
-                z-index: 3;
-                @include sprite($advantages-3);
+            .advantage__card{
+                position: relative;
+                &:before {
+                    position: absolute;
+                    right: 46px;
+                    bottom: 22px;
+                    content: "";
+                    z-index: 3;
+                    @include sprite($advantages-2);
+                }
             }
+        }
+        
+        &:nth-child(3){
+            position: relative;
             &:after{
                 content: "";
                 position: absolute;
@@ -259,31 +291,55 @@ header{
                 bottom: -75px;
                 left: 50%;
                 border-right: 1px dashed $border-color;
+                z-index: 1;
+            }
+            .advantage__card{
+                position: relative;
+                z-index: 2;
+                &:before {
+                    position: absolute;
+                    right: 40px;
+                    bottom: 14px;
+                    content: "";
+                    z-index: 3;
+                    @include sprite($advantages-3);
+                }
             }
         }
-        &:nth-child(4) {
-            position: relative;
-            &:before {
-                position: absolute;
-                right: 56px;
-                bottom: 20px;
-                content: "";
-                z-index: 3;
-                @include sprite($advantages-4);
-            }
+        &:nth-child(4){
+            .advantage__card{
+                position: relative;
+                &:before {
+                    position: absolute;
+                    right: 56px;
+                    bottom: 20px;
+                    content: "";
+                    z-index: 3;
+                    @include sprite($advantages-4);
+                }
+            }    
         }
-
     }
 }
 .design {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 57px;
+    @media($bp-larger-than-tablet){
+        padding-bottom: 50px;
+    }
     &__caption {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
         color: #1f1f1f;
-        letter-spacing: 3.3px;
         margin-bottom: 30px;
+        text-align: center;
+        line-height: 30px;
+        @media($bp-larger-than-tablet){
+            text-align: left;
+            font-size: 36px;
+            letter-spacing: 3.3px;
+            line-height: 36px;
+        }
     }
     &__image {
         height: 190px;
@@ -358,6 +414,9 @@ header{
     }
     &__item{
         margin-bottom: 52px;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
         a{
             &:hover{
                 .design__label{
@@ -452,15 +511,25 @@ header{
     }
 }
 .media{
-    padding: 50px 0;
+    padding: 50px 0 0;
     background: transparent url('/assets/template/img/media__bg.jpg') left top no-repeat;
     background-size: contain;
+    @media($bp-larger-than-tablet){
+        padding: 50px 0;
+    }
     &__header{
-        font-size: 36px;
+        font-size: 30px;
+        line-height: 30px;
         font-weight: 500;
         color: $grey;
-        letter-spacing: 3.3px;
         margin-bottom: 32px;
+        text-align: center;
+        @media($bp-larger-than-tablet){
+            font-size: 36px;
+            letter-spacing: 3.3px;
+            line-height: 36px;
+            text-align: left;
+        }
     }
     a.readmore{
         font-size: 13px;
@@ -493,19 +562,32 @@ header{
         line-height: 150%;
     }
     &__item{
-        height: 140px;
-        line-height: 140px;
         text-align: center;
-        margin-bottom: 22px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: 10px;
+        @media($bp-larger-than-tablet){
+            margin-top: 0;
+            margin-bottom: 22px;
+            height: 140px;
+            line-height: 140px;
+        }
+    }
+    &__image{
+        img{
+            max-width: 100%;
+        }
     }
 
 }
 
 .b-questions {
     padding-bottom: 140px;
-    padding-top: 75px;
+    padding-top: 30px;
     background: #fff url('/assets/template/img/forma__bg.jpg') center top no-repeat;
+    @media($bp-larger-than-phablet){
+        padding-top: 75px;
+    }
     @media($bp-larger-than-desktop){
         padding-bottom: 256px;
         padding-top: 134px;
@@ -756,17 +838,30 @@ header{
 
 
 .review{
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    @media($bp-larger-than-tablet){
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
     &__header {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
         color: $grey;
-        letter-spacing: 3.3px;
-        margin-bottom: 24px;
+        margin-bottom: 8px;
+        text-align: center;
+        @media($bp-larger-than-phablet){
+            text-align: left;
+            letter-spacing: 3.3px;
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
     }
     &__item{
-        margin-bottom: -20px;
+        margin-bottom: 40px;
+        @media($bp-larger-than-phablet){
+            margin-bottom: -20px;
+        }
         &:hover{
             .review__image{
                 transform: translate(-5px,5px);
@@ -776,9 +871,12 @@ header{
     &__image-box {
         height: 148px;
         width: 240px;
-        margin-left: 20px;
+        margin-left: auto;
         position: relative;
         z-index: 2;
+        @media($bp-larger-than-phablet){
+            margin-left: 20px;
+        }
     }
     &__image{
         position: relative;
@@ -800,12 +898,15 @@ header{
         height: 55px;
         line-height:55px;
         margin: 1px;
-        padding-left: 294px;
+        padding-left: 10px;
         font-weight: 700;
         text-transform: uppercase;
         color: #707070;
         font-size: 12px;
         position: relative;
+        @media($bp-larger-than-phablet){
+            padding-left: 294px;
+        }
         &:before{
             position: absolute;
             content: "";
@@ -818,8 +919,11 @@ header{
     }
     &__info{
         border: 1px solid $border-color;
-        margin-top: -72px;
         position: relative;
+        margin-top: 20px;
+        @media($bp-larger-than-phablet){
+            margin-top: -72px;
+        }
         &:before{
             position: absolute;
             right: 5px;
@@ -837,9 +941,17 @@ header{
         padding: 50px 22px 22px;
     }
     &__more-box{
-        text-align: right;
-        margin-top: 26px;
-        margin-right: 42px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        @media($bp-larger-than-phablet){
+            margin-top: 26px;
+            margin-bottom: 0;
+            margin-right: 42px;
+            text-align: right;
+        }
     }
     a.review__more {
         font-size: 13px;
